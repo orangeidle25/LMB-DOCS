@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Developped by QADS.cloud -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        const userLang = navigator.language.substring(0, 2);
+
+        switch (userLang) {
+            case 'es':
+                window.location.href = 'https://docs.lamaisonblanche.ca/es';
+                break;
+            case 'fr':
+                window.location.href = 'https://docs.lamaisonblanche.ca/fr';
+                break;
+            default:
+                window.location.href = 'https://docs.lamaisonblanche.ca/en';
+                break;
+        }
+    </script>
+</head>
+<body>
+    <p>Please wait, we are redirecting you to the correct documentation for your language...</p>
+    <p>Veuillez patienter, nous vous redirigeons vers la documentation adaptée à votre langue...</p>
+    <p>Por favor espere, lo estamos redirigiendo a la documentación correcta para su idioma...</p>
+    <br>
+    <a href="en.html">Click here for english</a>
+    <a href="fr.html">Cliquez ici pour le français</a>
+    <a href="es.html">Haga clic aquí para español</a>
+</body>
+</html>
